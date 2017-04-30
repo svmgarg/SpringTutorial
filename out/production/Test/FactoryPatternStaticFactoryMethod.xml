@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+               http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+
+
+    <bean id="manager" class="com.advance.factoryPattern.staticFactoryMethod.EmployeeFactory" factory-method= "getEmployee">
+        <constructor-arg  value="manager"/>
+    </bean>
+
+    <bean id="developer" class="com.advance.factoryPattern.staticFactoryMethod.EmployeeFactory" factory-method= "getEmployee">
+        <constructor-arg  value="developer"/>
+    </bean>
+
+    <bean id="tester" class="com.advance.factoryPattern.staticFactoryMethod.EmployeeFactory" factory-method= "getEmployee" >
+        <constructor-arg value="tester"/>
+    </bean>
+
+
+</beans>

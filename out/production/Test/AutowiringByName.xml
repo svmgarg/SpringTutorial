@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	   xsi:schemaLocation="http://www.springframework.org/schema/beans
+               http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+
+
+	<bean id="employee" class="com.basic.autowire.Employee" autowire="byName">
+		<property name="name" value="Shivam"/>
+		<property name="id" value="305"/>
+	</bean>
+
+	<bean id="homeAddress" class="com.basic.autowire.Address">
+		<property name="city" value="Ghaziabad"/>
+		<property name="street" value="Mandir wali gali"/>
+		<property name="state" value="Uttar Pradesh"/>
+		<property name="country" value="India"/>
+	</bean>
+	<bean id="officeAddress" class="com.basic.autowire.Address">
+		<property name="city" value="chennai"/>
+		<property name="street" value="Mandir wali gali"/>
+		<property name="state" value="Uttar Pradesh"/>
+		<property name="country" value="India"/>
+	</bean>
+
+
+	<bean id="contactInformation" class="com.basic.autowire.ContactInformation">
+		<property name="emailId" value="svmgarg@gmail.com"/>
+		<property name="mobileNumber" value="3457272520"/>
+	</bean>
+
+
+
+</beans>

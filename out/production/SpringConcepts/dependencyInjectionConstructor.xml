@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	   xsi:schemaLocation="http://www.springframework.org/schema/beans
+               http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+               
+    
+		<!-- DEPENDENCY INJECTION IS CONSTRUCTOR 
+		syntax for defining a  bean (Student)
+		Default scope  is singleton { only one object can be created }
+		another scope  is prototype { multiple object can be created }
+		
+		<constructor-arg  value="Shivam"></constructor-arg>
+		{ initialising name in student bean  }
+		{ default type  is String  }
+		
+		
+		<constructor-arg type="Address" ref="addressbean"></constructor-arg>
+		{ refering a another bean addressbean }
+		
+		
+		we should provide index .. inorder to avoid ambiguity like in student bean  for age and phone number
+		
+		-->
+		
+		
+	<bean id="studentbean" class="com.basic.dependencyInjection.Student" scope="prototype">
+        <constructor-arg index="0" value="Shivam"/>
+        <constructor-arg index="2" value="23"/>
+        <constructor-arg index="1" value="9457372520"/>
+		<constructor-arg type="Address" > 
+		    <ref bean = "addressbean" />
+		</constructor-arg>
+		<!-- <property  type="Address"  ref ="addressbean" ></property> -->
+		
+	</bean>
+
+
+	<bean id="addressbean" class="com.basic.dependencyInjection.Address" scope="singleton">
+        <constructor-arg type="String" value="mandir vali gali"/>
+
+        <constructor-arg type="String" value="ghaziabad"/>
+
+        <constructor-arg type="String" value="up"/>
+
+        <constructor-arg type="String" value="india"/>
+	</bean>
+
+</beans>  

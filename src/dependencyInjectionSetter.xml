@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	   xsi:schemaLocation="http://www.springframework.org/schema/beans
+               http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+               
+    
+		<!--
+		syntax for defining a  bean (Student)
+		Default scope  is singleton { only one object cane be created }
+		another scope  is prototype { multiple object cane be created }
+		
+		<property name="name" value="Shivam"></property>
+		{initialising name in student bean  }
+		{ dependency injection is setter } 
+		
+		
+		<property name="address" ref="addressbean"></property>
+		{ refering a anotther bean addressbean}
+		
+		
+		Note- Constructor call is mandatory as it is a part of object creation 
+		-->
+		
+		
+	<bean id="studentbean" class="com.basic.dependencyInjection.Student" scope="prototype">
+        <property name="name" value="Shivam"/>
+		
+		<property name="address" >		    
+		    <ref bean ="addressbean"/>
+		</property>
+		
+		<!-- <property name="address"  ref ="addressbean" ></property>	-->
+	</bean>
+
+
+	<bean id="addressbean" class="com.basic.dependencyInjection.Address" scope="singleton">
+        <property name="street" value="mandir vali gali"/>
+        <property name="city" value="ghaziabad"/>
+        <property name="state" value="up"/>
+        <property name="country" value="india"/>
+	</bean>
+
+</beans>  

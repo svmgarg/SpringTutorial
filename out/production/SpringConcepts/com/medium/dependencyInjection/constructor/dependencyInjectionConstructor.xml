@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+               http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+
+    <!--
+    Student  and student1 has constructor injection and having same no of arguments
+    For Student bean "1" will be set to NAME as default value type in spring is  STRING
+    For Student bean "1" will be set to AGE as type is defined as INT in student1
+    -->
+
+    <bean id="student" class="com.medium.dependencyInjection.constructor.Student" scope="prototype">
+        <constructor-arg value="1"/>
+    </bean>
+
+    <bean id="student1" class="com.medium.dependencyInjection.constructor.Student" scope="prototype">
+        <constructor-arg type="int" value="1"/>
+    </bean>
+
+
+</beans>
