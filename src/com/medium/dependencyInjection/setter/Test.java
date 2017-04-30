@@ -9,7 +9,6 @@ import org.springframework.beans.factory.xml.XmlBeanFactory;
 import org.springframework.core.io.ClassPathResource;
 import org.springframework.core.io.Resource;
 
-
 public class Test {
     public static void main(String[] args) {
 
@@ -30,6 +29,5 @@ public class Test {
 /*
 
 BeanFactory.getBean() --> always return  an object of return type of Object
-
 
 */
