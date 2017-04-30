@@ -1,12 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a96ae048-fc69-4016-9c2c-7fd67e98d4a3" name="Default" comment="Dummy File ...checking GIT SETUP">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SpringTutorial.iml" afterPath="$PROJECT_DIR$/SpringTutorial.iml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/.idea/libraries/SpringJARS.xml" afterPath="$PROJECT_DIR$/.idea/libraries/SPRING_JARS.xml" />
-    </list>
+    <list default="true" id="a96ae048-fc69-4016-9c2c-7fd67e98d4a3" name="Default" comment="Dummy File ...checking GIT SETUP" />
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
