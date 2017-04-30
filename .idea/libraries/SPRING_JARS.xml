@@ -1,5 +1,5 @@
 <component name="libraryTable">
-  <library name="SpringJARS">
+  <library name="SPRING_JARS">
     <CLASSES>
       <root url="file://E:/setups/jar/spring-framework-3.0.1.RELEASE-A/spring-framework-3.0.1.RELEASE-A/dist" />
     </CLASSES>
